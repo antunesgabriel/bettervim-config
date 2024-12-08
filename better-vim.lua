@@ -194,9 +194,9 @@ return {
       v = {},
       x = {},
     },
-    tabs = function(tab)
-      return "<leader>t" .. tab
-    end,
+    -- tabs = function(tab)
+    --   return "<leader>t" .. tab
+    -- end,
   },
   lualine = {
     options = {},
