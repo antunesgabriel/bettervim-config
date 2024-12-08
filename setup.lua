@@ -8,6 +8,10 @@ function _G.set_terminal_keymaps()
   vim.keymap.set('t', '<C-\\>', function()
     require("toggleterm").toggle()
   end, opts)
+
+  vim.keymap.set('t', '<C-q>', function()
+    vim.cmd('q!')
+  end, opts)
 end
 
 vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
