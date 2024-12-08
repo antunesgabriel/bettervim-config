@@ -1,5 +1,5 @@
 local plugins = require("better-vim.config.plugins")
-local lsps = require("better-vim.config.lsp")
+local lsps = require("better-vim.config.lsps")
 local formatters = require("better-vim.config.formatters")
 local mappings = require("better-vim.config.mappings")
 local noise = require("better-vim.config.noise")

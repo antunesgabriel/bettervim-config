@@ -43,7 +43,21 @@ return {
           require("telescope").extensions.toggleterm.toggleterm()
         end,
         "List ToggleTerm Terminals"
-      }
+      },
+
+      ["<Tab>"] = {
+        function()
+          require("bufferline").cycle(1)
+        end,
+        "Next Tab"
+      },
+
+      ["<S-Tab>"] = {
+        function()
+          require("bufferline").cycle(-1)
+        end,
+        "Previous Tab"
+      },
     },
     i = {},
     v = {},
