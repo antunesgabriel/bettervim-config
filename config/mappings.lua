@@ -58,6 +58,26 @@ return {
         end,
         "Previous Tab"
       },
+
+      ['<leader>gl'] = {
+        '<cmd>Gitsigns toggle_current_line_blame<CR>',
+        'Toggle Git Blame (current line)'
+      },
+
+      ['<leader>gp'] = {
+        '<cmd>Gitsigns preview_hunk<CR>',
+        'Preview Git Hunk'
+      },
+
+      ['<leader>di'] = {
+        '<cmd>Gitsigns diffthis<CR>',
+        'Diff This'
+      },
+
+      ['<leader>gc'] = {
+        '<cmd>Gitsigns toggle_linehl<CR>',
+        'Toggle Git Linehl'
+      },
     },
     i = {},
     v = {},
