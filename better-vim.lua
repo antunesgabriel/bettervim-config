@@ -31,7 +31,7 @@ return {
   },
   hooks = {
     after_setup = function()
-      require("better-vim.setup")
+      require("better-vim.config.hooks")
     end,
   },
 }

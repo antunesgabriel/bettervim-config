@@ -76,8 +76,8 @@ cmp.setup({
     { name = 'supermaven' }, -- Adicione Supermaven como uma fonte
   },
   mapping = {
-    ['<C-Space>'] = cmp.mapping.complete(),             -- Mostrar sugestões manualmente
-    ['<C-e>'] = cmp.mapping.close(),                    -- Fechar o menu de autocomplete
-    ['<CR>'] = cmp.mapping.confirm({ select = true }),  -- Confirmar sugestão
+    ['<C-Space>'] = cmp.mapping.complete(),            -- Mostrar sugestões manualmente
+    ['<C-e>'] = cmp.mapping.close(),                   -- Fechar o menu de autocomplete
+    ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Confirmar sugestão
   },
 })
