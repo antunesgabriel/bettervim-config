@@ -15,4 +15,5 @@ return {
   -- ruff = {},
   -- mypy = {},
   black = {},
+  sql_formatter = {}
 }
