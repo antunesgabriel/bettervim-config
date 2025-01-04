@@ -78,8 +78,34 @@ return {
         '<cmd>Gitsigns toggle_linehl<CR>',
         'Toggle Git Linehl'
       },
+
+      ["<leader>nt"] = {
+        "<cmd>TodoTelescope keywords=TODO<cr>",
+        "List TODOs"
+      },
+      ["<leader>nf"] = {
+        "<cmd>TodoTelescope keywords=FIX,FIXME<cr>",
+        "List FIXMEs"
+      },
+      ["<leader>nw"] = {
+        "<cmd>TodoTelescope keywords=WARN,WARNING<cr>",
+        "List WARNs"
+      },
+      ["<leader>nn"] = {
+        "<cmd>TodoTelescope keywords=NOTE<cr>",
+        "List NOTEs"
+      },
+      ["<leader>na"] = {
+        "<cmd>TodoTelescope<cr>",
+        "List All TODOs"
+      },
     },
-    i = {},
+    i = {
+      ["jj"] = {
+        "<CMD>lua vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<ESC>', true, true, true), 'n', true)<CR>",
+        "Exit Insert Mode"
+      },
+    },
     v = {},
     x = {},
   },
